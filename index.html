@@ -7,51 +7,164 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
 
     <title>Sean Mena</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-primary">
-      <!-- Navbar content -->
-      <a class="navbar-brand" href="./index.html">Sean Mena</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-
-        <a class="nav-link" href="./aboutme.html">About Me <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./gallery.html">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./interests.html">Interests</a>
-      </li>
-
-          <!-- <div class="dropdown-divider"></div> -->
-        </div>
-      </li>
-    </ul>
-  </div>
-    </nav>
+    <section class="hero is-dark is-fullheight has-bg-img">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <h1>Sean Mena</h1>
+              </a>
+              <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end">
+                <a  href="#about-me-section" id="about-me" class="navbar-item is-active">
+                  About Me
+                </a>
+                <a href="#project-section" id="projects" class="navbar-item">
+                  Projects
+                </a>
+                <a href="#resume-section" id="resume" class="navbar-item">
+                  Resume
+                </a>
+                <a href="#contact-section" id="contact" class="navbar-item">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
     
-    <div class="jumbotron col-10 mx-auto">
-      <h1 class="display-4">Hello!</h1>
-      <p class="lead mx-center">My name is Sean Mena and this is my portfolio</p>
-      <hr class="my-4">
-      <p>Click the button below to get started</p>
-      <a class="btn btn-primary btn-lg" href="./aboutme.html" role="button">About Me</a>
-    </div>
-    <!-- a picture card with an discription of me -->
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
 
+        <!-- title -->
+        <div id="hero-title" class="container has-text-centered">
+          <h1 class="title">
+            Portfolio
+          </h1>
+          <h2 class="subtitle">
+            by, Sean Mena
+          </h2>
+        </div>
+
+
+          <!-- About Me -->
+          <div id="about-notif" class="notification is-black">
+            <button id="about-x" class="delete"></button>
+            Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Sit amet,
+            consectetur adipiscing elit
+          </div>
+
+
+      </div>
+    
+      <!-- Hero footer: will stick at the bottom -->
+
+    </section>
+
+   <div class="container">
+    <section id="about-me-section" class="hero is-light is-medium">
+      <div class="hero-body">
+      <h1 class="title has-text-centered">About Me</h1>
+      <p class="has-text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, dolor voluptatibus reiciendis quod laboriosam, natus nostrum adipisci, quo placeat vero iusto. Eius tenetur voluptatum exercitationem. At veniam molestiae placeat perferendis numquam consectetur, reprehenderit doloribus quae culpa eveniet quo corporis consequuntur asperiores recusandae, unde expedita velit possimus, exercitationem esse veritatis. Eveniet praesentium eius consectetur, magnam corrupti aspernatur eligendi sapiente tenetur quod, accusantium ducimus ipsa ut voluptatibus cupiditate totam beatae! Quisquam iste praesentium minus alias totam rerum.</p>
+       </div>  
+
+    </section>
+    </div>
+
+    <div class="container">
+      <section id="project-section" class="hero is-black is-medium">
+          <div class="hero-body">
+          <h1 class="title has-text-centered">
+            Projects
+          </h1>
+        <ul class="has-text-centered">
+          <li><a href="https://github.com/seanmena" target="_blank">Github</a></li>
+          <li><a href="https://github.com/clarissareeve/Emotional_Media_Generator" target="_blank">Emotional Media Generator</a></li>
+          <li><a href="https://github.com/seanmena/hw3"target="_blank">Password Generator</a></li>
+          <li><a href="https://github.com/seanmena/weatherapplication" target="_blank">Weather Application</a></li>
+        </ul>
+        </div>
+      </section>
+  </div>
+
+
+  <div class="container">
+    <div class="block">
+      <section id="resume-section">
+      <figure class="imag">
+      <img src="./images/Resume.jpg" alt="">
+      </figure>
+    </section>
+    </div>
+  </div>
+
+  <section id="contact-section">
+<div class="container">
+  <div class="card">
+    <div class="card-image">
+        <img class="img" src="./images/DSC01197-2.jpg" alt="Picture of Sean">
+    </div>
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+
+        </div>
+        <div class="media-content">
+          <p class="title is-4">Contact</p>
+        </div>
+      </div>
+  
+      <div class="content">
+        <p>
+          <strong>Email:</strong> seanmena13@gmail.com 
+          <br>
+          <strong>Phone:</strong> (801)867-4854 
+          <strong>Address:</strong> 2529 S highland Dr. Salt Lake City Ut, 84106
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+    <!-- Resume -->
+
+    <!-- <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a>Overview</a></li>
+            <li><a>Modifiers</a></li>
+            <li><a>Grid</a></li>
+            <li><a>Elements</a></li>
+            <li><a>Components</a></li>
+            <li><a>Layout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div> -->
     <!-- Portfolio -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>

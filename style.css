@@ -1,3 +1,18 @@
-/* .aboutme {
-    align-content: center;
-} */
+body, html {
+    height: 100%;
+}
+
+.has-bg-img {
+    background: url(./images/pexels-stephan-seeber-1261728.jpg);
+    max-height: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    font-size: 20px;
+}
